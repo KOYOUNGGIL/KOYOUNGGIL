@@ -15,7 +15,7 @@ void main() {
   var varInt = 1;
   var varDouble = 2.2;
   var varString = "Hello!";
-  print("$varInt $varDouble $varString");
+  print("RESULT[ $varInt, $varDouble, '$varString' ]");
   
   // Constant Case.3
   dynamic dynInt = 1;
