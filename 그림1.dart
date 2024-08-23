@@ -11,7 +11,7 @@ void main() {
   String strTemp = "Hello!";
   print(strTemp);
   
-  // // variable Case.2 
+  //  variable Case.2 
   var varInt = 1;
   var varDouble = 2.2;
   var varString = "Hello!";
@@ -22,3 +22,15 @@ void main() {
   dynamic dynDouble = 2.2;
   dynamic dynString = "Hello!";
   print("$dynInt $dynDouble $dynString");
+  
+  // Constant Case.1
+  const double cMathP1 = 3.141592;
+  const cChangeRate = 1.3;
+  print ("$cMathP1 $cChangeRate");
+  
+  // Constant Case.2
+  final String fFirstFruit = "Apple";
+  final fSecondFruit = "Mango";
+  print("$fFirstFruit $fSecondFruit");
+}
+  
