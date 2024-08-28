@@ -42,6 +42,7 @@ void main() {
       count = 1;
     }
   }
+  // continue 와 break 문법 이해하기
   print("\n[6]    'comtinued' and 'break' statement.\n");
   for (count = number = 1; number <= 9; number++) {
     if (number > 4) {
