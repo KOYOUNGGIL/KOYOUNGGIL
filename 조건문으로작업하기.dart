@@ -1,62 +1,62 @@
 void main() {
-  //비교연산자 이해하기
-  var number1 = 1;
-  var number2 = 1;
-  var number3 = 2;
-  print ("[ 1] $number1 == $number2 : ${number1 == number2}");  //== 두값이 같으면 true 아니면 false
-  print ("[ 2] $number1 == $number3 : ${number1 == number3}");
-  print ("[ 3] $number1 == $number2 : ${number1 == number2}");
-  print ("[ 4] $number1 == $number3 : ${number1 == number3}");
-  print ("[ 5] $number1 == $number2 : ${number1 == number2}");
-  print ("[ 6] $number1 == $number2 : ${number1 == number2}");
-  print ("[ 7] $number1 == $number2 : ${number1 == number2}");
-  print ("[ 8] $number1 == $number2 : ${number1 == number2}");
-  print ("[ 9] $number1 == $number3 : ${number1 == number3}");
-  print ("[10] $number1 == $number3 : ${number1 == number3}");
-  print ("[11] $number1 == $number3 : ${number1 == number3}");
-  print ("[12] $number1 == $number3 : ${number1 == number3}");
-  var flag1 = ((number1 == number2) || (number1 == number3));
-  bool flag2 = ((number1 == number2) && (number1 == number3));
-  print ("[13] ($number1 == $number2) OR  ($number1 == number3) : $flag1");
-  print ("[14] ($number1 == $number2) AND ($number1 == number3) : $flag2");
-  print ("[15] NOT ($number1 == $number2) : ${!(number1 == number2)}");
-  // if else 조건문 이햐하기
-  if (number1 == number2) {
-    print ("[16] (a) number1[$number1] equal to number2[$number2].");
-  } else if (number1 == number3) {
-    print ("[16] (b) number1[$number1] equal to number3[$number3].");
-  } else {
-    print ("[16] (c) number1[$number1] not equal to number2[$number2]  and number3[$number3].");
+  // for 반복문 이해하기
+  print("[1]    'for' statement.\n");
+  var number = 1;
+  var count = 1 ;
+  for (count = 1; count <= 3; count++) {
+    print ("$number * $count = ${number * count}");
+    
   }
-  // switch 조건문 이해하기
-  var switchStatus = 'OFF';
-  switch (switchStatus) {
-    case 'OFF':
-      print ("[17] (a) switch is OFF.");
-      break;
-    case 'ON':
-      print ("[17] (b) switch is ON.");
-      break;
-    default:
-      print ("[17] (c) switch status is not correct.");
-      break;
+  // while 반복문 이해하기
+  print("\n[2]    'while' statement.\n");
+  number = 1;
+  count = 1 ;
+  while (count <= 3) {
+    print("$number * $count = ${number * count}");
+    count++;
+    
   }
-    switch (switchStatus) {
-    case 'off':
-    case 'OFF':
-      print ("[18] (a) switch is OFF.");
-      break;
-    case 'on':
-    case 'ON':
-      print ("[18] (b) switch is ON.");
-      break;
-    default:
-      print ("[18] (c) switch status is not correct.");
-      break;
+  // do-while 반복문 이해하기
+  print("\n[3]    'do-while' statement.\n"); 
+  number = 1;
+  count = 1 ;
+  do {
+    print("$number * $count = ${number * count}");
+    count++;
+  } while (count <=3);
+  print("\n[4]     nested loop statement.\n");
+  for (count = number = 1; number <= 3; number++) {
+    while (count <=3) {
+      print("$number * $count = ${number * count}");
+      count++;
+    }
+    count = 1;
   }
-// assert 조건문 이해하기
-  var programTermination = 'NORMAL';
-  
-  assert(programTermination == 'NORMAL');
-  print ("[19] program terminated in normal.");
-}
+  print("\n[5]     nested conditional statement.\n");
+  for (count = number = 1; number <= 3; number++) {
+    if ((number % 9) == 1) {
+      while (count <= 3) {
+        print("$number * $count = ${number * count}");
+        count++; 
+      }
+      count = 1;
+    }
+  }
+  print("\n[6]    'comtinued' and 'break' statement.\n");
+  for (count = number = 1; number <= 9; number++) {
+    if (number > 4) {
+      print("[6.1] break - $number");
+      continue;
+    } else if ((number % 9) != 1) {
+      print("[6.2] continue - $number");
+    } else {
+      print("[6.3] calculate - $number");
+      while (count <= 3) {
+        print("$number * $count = $count = ${number * count}");
+        count++;
+      }
+      count = 1;
+      }
+    }  
+ 
+  }
