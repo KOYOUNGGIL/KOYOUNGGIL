@@ -1,9 +1,9 @@
 void main() {
   // for 반복문 이해하기
   print("[1]    'for' statement.\n");
-  var number = 1;
+  var number = 5;
   var count = 1 ;
-  for (count = 1; count <= 3; count++) {
+  for (count = 1; count <= 9; count++) {
     print ("$number * $count = ${number * count}");
     
   }
@@ -25,8 +25,8 @@ void main() {
     count++;
   } while (count <=3);
   print("\n[4]     nested loop statement.\n");
-  for (count = number = 1; number <= 3; number++) {
-    while (count <=3) {
+  for (count = number = 1; number <= 9; number++) {
+    while (count <=9) {
       print("$number * $count = ${number * count}");
       count++;
     }
@@ -43,16 +43,16 @@ void main() {
     }
   }
   // continue 와 break 문법 이해하기
-  print("\n[6]    'comtinued' and 'break' statement.\n");
+  print("\n[6]    'continue' and 'break' statement.\n");
   for (count = number = 1; number <= 9; number++) {
-    if (number > 4) {
+    if (number > 10) {
       print("[6.1] break - $number");
       continue;
-    } else if ((number % 9) != 1) {
+    } else if ((number % 2) != 0) {
       print("[6.2] continue - $number");
     } else {
       print("[6.3] calculate - $number");
-      while (count <= 3) {
+      while (count <= 9) {
         print("$number * $count = $count = ${number * count}");
         count++;
       }
