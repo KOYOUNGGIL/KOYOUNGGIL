@@ -1,4 +1,3 @@
-
 void main() {
   var number1 = 1;
   var number2 = 1;
@@ -17,8 +16,14 @@ void main() {
   print ("[12] $number1 == $number3 : ${number1 == number3}");
   var flag1 = ((number1 == number2) || (number1 == number3));
   bool flag2 = ((number1 == number2) && (number1 == number3));
-  print ("[13] $number1 == $number2 OR $(number1 == number3) : $flag1");
-  print ("[14] $number1 == $number3 : ${number1 == number3}");
-  print ("[15] $number1 == $number3 : ${number1 == number3}");
-  var flag1 = ((number1 == number2) || (number1 == number3));
+  print ("[13] ($number1 == $number2) OR  ($number1 == number3) : $flag1");
+  print ("[14] ($number1 == $number2) AND ($number1 == number3) : $flag2");
+  print ("[15] NOT ($number1 == $number2) : ${!(number1 == number2)}");
+  if (number1 == number2) {
+    print ("[16] (a) number1[$number1] equal to number2[$number2].");
+  } else if (number1 == number3) {
+    print ("[16] (b) number1[$number1] equal to number3[$number3].");
+  } else {
+    print ("[16] (c) number1[$number1] not equal to number2[$number2]  and number3[$number3].");
   }
+}
