@@ -1,4 +1,5 @@
 void main() {
+  //비교연산자 이해하기
   var number1 = 1;
   var number2 = 1;
   var number3 = 2;
@@ -19,6 +20,7 @@ void main() {
   print ("[13] ($number1 == $number2) OR  ($number1 == number3) : $flag1");
   print ("[14] ($number1 == $number2) AND ($number1 == number3) : $flag2");
   print ("[15] NOT ($number1 == $number2) : ${!(number1 == number2)}");
+  // if else 조건문 이햐하기
   if (number1 == number2) {
     print ("[16] (a) number1[$number1] equal to number2[$number2].");
   } else if (number1 == number3) {
@@ -26,4 +28,35 @@ void main() {
   } else {
     print ("[16] (c) number1[$number1] not equal to number2[$number2]  and number3[$number3].");
   }
+  // switch 조건문 이해하기
+  var switchStatus = 'OFF';
+  switch (switchStatus) {
+    case 'OFF':
+      print ("[17] (a) switch is OFF.");
+      break;
+    case 'ON':
+      print ("[17] (b) switch is ON.");
+      break;
+    default:
+      print ("[17] (c) switch status is not correct.");
+      break;
+  }
+    switch (switchStatus) {
+    case 'off':
+    case 'OFF':
+      print ("[18] (a) switch is OFF.");
+      break;
+    case 'on':
+    case 'ON':
+      print ("[18] (b) switch is ON.");
+      break;
+    default:
+      print ("[18] (c) switch status is not correct.");
+      break;
+  }
+// assert 조건문 이해하기
+  var programTermination = 'NORMAL';
+  
+  assert(programTermination == 'NORMAL');
+  print ("[19] program terminated in normal.");
 }
