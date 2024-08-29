@@ -62,16 +62,19 @@ void main() {
   
   // 수행결과 확인
   print ("[5] Class Type Operators");
-  //printMessage ("5-1", iInteger is int);
-  //printMessage ("5-2", dDouble is double);
-  //printMessage ("5-3", sString is String);
-  //printMessage ("5-4", bBoolean is bool);
-  
+  printMessage ("5-1", iInteger is int);
+  printMessage ("5-2", dDouble is double);
+  printMessage ("5-3", sString is String);
+  printMessage ("5-4", bBoolean is bool);
+  printMessage ("5-5", iInteger is! int);
+  printMessage ("5-6", dDouble is! double);
+  printMessage ("5-7", sString is! String);
+  printMessage ("5-8", bBoolean is! bool);
   var tmpS = "String";
-  printMessage ("5-5", tmpS = String);
+  printMessage ("5-9", tmpS is String);
   num tmpI = 1.1;
-  printMessage ("5-6", tmpI is String);
-  printMessage ("5-7", tmpI is int);
-  printMessage ("5-8", tmpI is double);
+  printMessage ("5-10", tmpI is String);
+  printMessage ("5-11", tmpI is int);
+  printMessage ("5-12", tmpI is double);
  
 }
