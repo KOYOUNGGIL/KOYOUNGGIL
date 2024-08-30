@@ -74,10 +74,20 @@ void main() {
   print("[04] Last element of fruits is ${fruits.last}");
   
   //아래문장은 type 으로 인한 에러 발생함 원인 파악 필요
-  //print("[05] Index of 3 in fruits is ${fruits.indexOf(3)}");
-  print(fruits[3]);
+  print("[05] Index of 3 in fruits is {$fruits.indexOf(3)}");
+  print("{$fruits.indexOf(3)}");
+  print(fruits[2]);
   fruits.insert(2, "Melon");
   print(fruits);
   print("[06] fruits after insert(2,Melon) is $fruits");
+  fruits.add('Tomato');
+  print(fruits);
+  fruits.addAll({'Tomato','Mango'});
+  print(fruits);
+  
+  // 리스트 클리어
+  fruits.clear();
+  
+  //List mixedList = [1, 2.2, "Three"];
 
 }
