@@ -22,11 +22,9 @@ void main() {
   
   // forEach 메서드 이해하기
   print("[3] forEach Method");
-  void printStar(var item) {
-     print("/\u{2605}");
-  }
+ 
   iList.forEach(printStar);
-  //void printStar(var item) {
-       print("/\u{2605}");
-  //}
+  void printStar(var item) {
+       print("\u{2605} $item \u{2605}");
+  }
 }
