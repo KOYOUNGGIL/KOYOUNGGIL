@@ -19,4 +19,14 @@ void main() {
     ..add(0)
     ..sort((a, b) => a.compareTo(b));
   print("$iList");
+  
+  // forEach 메서드 이해하기
+  print("[3] forEach Method");
+  void printStar(var item) {
+     print("/\u{2605}");
+  }
+  iList.forEach(printStar);
+  //void printStar(var item) {
+       print("/\u{2605}");
+  //}
 }
